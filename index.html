@@ -11,14 +11,10 @@
     <script>
       function onSubmit(token) {
         const timestamp = new Date().toUTCString();
-        const timestampI  = new Date().toUTCString();
-        const timestampII = new Date().toUTCString();
         axios
-          .get("https://clemensk.korconnect.io/yahoo-finances332/auto-complete?q=tesla&region=US", {
+          .get("https://clemensd.kor-test.com/yahoo-fincance-I/auto-complete?q=tesla&region=US", {
             headers: {
               timestamp,
-              timestampI,
-              timestampII,
               token,
               "x-api-key": "uGVt9gnj8Yyg9id4WAYn9rvULjLwHJO83EiIomOj",
             },
